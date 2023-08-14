@@ -1,0 +1,64 @@
+@use "@src/styles/colors";
+
+.wrapper button {
+  background-color: colors.$color-white-secondary;
+  padding: 10px 14px;
+  border-radius: 4px;
+  position: relative;
+  border: 0;
+  cursor: pointer;
+  transition: transform 300ms ease-out;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5);
+  span {
+    line-height: 1.7;
+  }
+  span,
+  img {
+    position: relative;
+    z-index: 3;
+  }
+
+  &:after {
+    content: "";
+    height: 4px;
+    background: colors.$color-gradient-horizontal;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: height 300ms ease-out;
+    z-index: 2;
+    border-radius: 4px;
+  }
+  &.blue:after {
+    background: colors.$color-blue;
+  }
+  &.purple:after {
+    background: colors.$color-purple;
+  }
+}
+
+.wrapper {
+  > a img:nth-child(2) {
+    display: none;
+  }
+  &:hover {
+    button {
+      transform: translateY(-8px);
+      span {
+        color: colors.$color-white-background;
+      }
+      &:after {
+        height: 100%;
+      }
+    }
+    > a {
+      img:nth-child(1) {
+        display: none;
+      }
+      img:nth-child(2) {
+        display: revert;
+      }
+    }
+  }
+}
