@@ -1,0 +1,37 @@
+@use "colors";
+
+.header {
+    font-family: "Candal", sans-serif;
+    font-weight: 400;
+    color: #222;
+    line-height: normal;
+    font-size: 1rem;
+    &__small {
+        @extend .header;
+        font-size: 39px;
+        letter-spacing: -1.95px;
+    }
+    &__medium {
+        @extend .header;
+        font-size: 40px;
+        letter-spacing: -2px;
+    }
+    &__big {
+        @extend .header;
+        font-size: 72px;
+        letter-spacing: -3.6px;
+        line-height: 95%;
+    }
+    &__extra-small {
+        @extend .header;
+        font-size: 32px;
+        letter-spacing: -1.6px;
+    }
+    &__white {
+        @extend .header;
+        font-size: 24px;
+        color: colors.$color-white-background;
+        letter-spacing: -1.2px;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+.footer {
+  padding: 22px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  &__name {
+    padding-right: 8px;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

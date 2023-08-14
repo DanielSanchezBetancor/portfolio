@@ -1,0 +1,57 @@
+@use "./colors.scss";
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #222;
+  line-height: normal;
+  font-size: 1rem;
+  &__closer {
+    @extend .text;
+    letter-spacing: -0.8px;
+  }
+  &__higher {
+    @extend .text;
+    line-height: 150%;
+  }
+  &__white {
+    @extend .text__higher;
+    color: colors.$color-white-primary;
+    font-weight: 700;
+  }
+  &__semiwhite {
+    @extend .text;
+    color: #f8f8f8;
+    font-size: 24px;
+    font-style: normal;
+    letter-spacing: -1.2px;
+  }
+  &__small {
+    @extend .text;
+    font-size: 0.75rem;
+  }
+  &__big {
+    @extend .text;
+    font-size: 1.25rem;
+  }
+  &__semibold {
+    @extend .text;
+    font-weight: 500;
+    &__small {
+        @extend .text__semibold;
+        font-size: 0.25rem;
+    }
+  }
+  &__bold {
+    @extend .text;
+    font-weight: 700;
+    &__small {
+      @extend .text__bold;
+      font-size: 14px;
+    }
+    &__big {
+      @extend .text__bold;
+      @extend .text__big;
+    }
+  }
+}

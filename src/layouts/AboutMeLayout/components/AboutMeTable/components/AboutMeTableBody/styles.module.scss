@@ -1,0 +1,95 @@
+@use "../../styles.module.scss" as parentStyle;
+
+.panelImage {
+  display: none;
+  border-radius: 100vh;
+  width: parentStyle.$imageWidth;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  align-self: flex-start;
+}
+
+.panelLeft {
+  display: flex;
+  gap: parentStyle.$gap;
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.panelRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.panelsWrapper {
+  display: grid;
+  grid-template-columns: 95vw 95vw;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  // width: 150%;
+  transition: translate 200ms ease-out;
+  > div {
+    transition: opacity 200ms ease-out;
+  }
+  > :first-child {
+    opacity: 1;
+  }
+  > :last-child {
+    opacity: 0;
+  }
+  &.rightActivePanel {
+    translate: -50%;
+    > :first-child {
+      opacity: 0;
+    }
+    > :last-child {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  .panelsWrapper {
+    grid-template-columns: 1fr 1fr;
+    width: 200%;
+  }
+}
+@media (min-width: 1024px) {
+  .panelImage {
+    display: revert;
+  }
+  .panelLeft {
+    gap: parentStyle.$gap;
+    &__actions {
+      justify-content: unset;
+    }
+    &__information {
+      margin-top: 4rem;
+    }
+  }
+  .panelRight {
+    padding-left: 200px;
+  }
+  .panelsWrapper {
+    width: 150%;
+  }
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+  ul {
+    margin: 0;
+  }
+}

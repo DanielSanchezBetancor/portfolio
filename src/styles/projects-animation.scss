@@ -1,0 +1,21 @@
+$className: "animate-grid-";
+
+$length: 10;
+$time: 200;
+$timeValue: ms;
+
+@for $iterator from 0 to $length {
+  .#{$className}#{$iterator} {
+    animation: slideIn #{$time}#{$timeValue} forwards ease-out #{$time * 2 * $iterator}#{$timeValue};
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(1.5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

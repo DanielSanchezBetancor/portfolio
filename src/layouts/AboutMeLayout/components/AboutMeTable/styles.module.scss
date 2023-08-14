@@ -1,0 +1,86 @@
+@use "@src/styles/colors";
+
+$transition: 200ms ease-out;
+$imageWidth: 250px;
+$gap: 1rem;
+$maxGap: 75px;
+
+.table {
+  &__header {
+    width: fit-content;
+    margin: 0px 15px;
+    &__option {
+      display: inline-block;
+      width: 160px;
+      padding: 1.1rem 0;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      background-color: colors.$color-white-background;
+      cursor: pointer;
+      &:before,
+      &:after {
+        content: "";
+        transition: transform $transition;
+        width: 80%;
+        position: absolute;
+        background: colors.$color-gradient-horizontal;
+        border-radius: 4px;
+        // Skew makes weird things
+        height: 98%;
+        top: 1px;
+        box-sizing: border-box;
+      }
+      &:before {
+        left: 0;
+        z-index: -1;
+      }
+      &:after {
+        left: 0;
+        z-index: -2;
+        transform-origin: bottom right;
+        transform: skew(-25deg, 0deg);
+      }
+      &:has(+ span:not(.activeOption)) + span {
+        &:before {
+          left: unset;
+          right: 0;
+        }
+      }
+    }
+    .activeOption {
+      background-color: transparent;
+      &:first-child:after,
+      &:before {
+        transform: translateX(100%) skew(0deg, 0deg);
+        scale: 0;
+        background: transparent;
+      }
+    }
+    &__option + .activeOption {
+      &:after,
+      &:before {
+        transform: translateX(-100%) skew(0deg, 0deg);
+        scale: 0;
+        background: transparent;
+      }
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  .table__header {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .table {
+    &__header {
+      margin: 0;
+      margin-left: calc($imageWidth + $gap);
+      &__option {
+        width: 200px;
+      }
+    }
+  }
+}
