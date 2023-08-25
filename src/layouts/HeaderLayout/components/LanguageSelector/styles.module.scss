@@ -1,0 +1,36 @@
+@use "@src/styles/colors";
+
+.languageSelector {
+  display: none;
+  justify-content: space-between;
+  position: relative;
+  > span:first-child,
+  :last-child {
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+  &::after {
+    content: "";
+    width: 26px;
+    height: 3px;
+    background: colors.$color-gradient-horizontal;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    // Padding - px to center
+    transform: translateX(calc(1rem - 2px));
+    transition: transform 200ms ease-in-out;
+  }
+  &.openMenu {
+    display: revert;
+  }
+  &.translate::after {
+    transform: translateX(calc(4rem + 10px - 2px));
+  }
+}
+
+@media (min-width: 1024px) {
+  .languageSelector {
+    display: revert;
+  }
+}

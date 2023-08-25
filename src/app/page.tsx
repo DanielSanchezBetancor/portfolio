@@ -7,9 +7,7 @@ const Home = () => {
   const { language } = i18n;
   return (
     <html lang={language}>
-      <body>
         <HomeView />
-      </body>
     </html>
   );
 };

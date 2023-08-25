@@ -11,6 +11,7 @@ const useHomeView = () => {
   const aboutMeRef = useRef<HTMLElement>(null);
   const skillsRef = useRef<HTMLElement>(null);
   const projectsRef = useRef<HTMLElement>(null);
+  const [open, setOpen] = useState(false); // Can be a context to avoid prop drilling
 
   const handleScroll = (_e: Event) => {
     const skills = skillsRef.current?.getBoundingClientRect();
@@ -42,7 +43,7 @@ const useHomeView = () => {
     handleScroll(new Event("scroll"));
   }, []);
 
-  return { activeId, aboutMeRef, skillsRef, projectsRef };
+  return { activeId, aboutMeRef, skillsRef, projectsRef, open, setOpen };
 };
 
 export default useHomeView;

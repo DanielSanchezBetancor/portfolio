@@ -1,9 +1,6 @@
 @use "@src/styles/colors";
 
 .main {
-  display: grid;
-  grid-template-rows: repeat(3, minmax(max-content, 100vh)); // hehe :)
-  gap: 20vh;
   section {
     background-color: colors.$color-white-background;
     scroll-margin-top: 125px;
@@ -15,25 +12,11 @@
         animation-name: slideIn;
       }
     }
-    // animation-iteration-count: infinite;
   }
+}
 
-  ::-webkit-scrollbar {
-    width: 2rem;
-    background: colors.$color-white-background;
-    margin: 100px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    width: 1rem;
-    border-radius: 100vh;
-    background: colors.$color-gradient-vertical;
-    border: 10px solid colors.$color-white-background;
-  }
-
-  ::-webkit-scrollbar-track {
-    margin: 100px;
-  }
+.hidden__body::-webkit-scrollbar-thumb {
+  background: transparent;
 }
 
 @keyframes slideIn {
