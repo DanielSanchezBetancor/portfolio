@@ -1,0 +1,3 @@
+interface ILanguageSelector {
+    open: boolean;
+}

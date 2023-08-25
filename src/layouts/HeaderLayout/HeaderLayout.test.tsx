@@ -141,7 +141,7 @@ describe("Header Layout Test Suite", () => {
     expect(setOpenSpy).toBeCalledTimes(1);
   });
   it("should have correct attributes on opened options", () => {
-    const utils = setup(CORRECT_MOCK, { ...CORRECT_HOOK_MOCK, open: true });
+    const utils = setup(CORRECT_MOCK, CORRECT_HOOK_MOCK);
 
     const headerMenuActionsOpen = utils.context.getByTestId(
       "header-menu-actions-open"
@@ -154,7 +154,7 @@ describe("Header Layout Test Suite", () => {
     expect(headerMenuActionsClose).not.toHaveClass("hidden");
   });
   it("should have correct attributes on closed options", () => {
-    const utils = setup(CORRECT_MOCK, { ...CORRECT_HOOK_MOCK, open: false });
+    const utils = setup(CORRECT_MOCK, CORRECT_HOOK_MOCK);
 
     const headerMenuActionsOpen = utils.context.getByTestId(
       "header-menu-actions-open"
@@ -168,7 +168,7 @@ describe("Header Layout Test Suite", () => {
   });
   it("should be bold if active", () => {
     const utils = setup(
-      { activeId: MENU_OPTIONS.PROJECTS.id },
+      { ...CORRECT_MOCK, activeId: MENU_OPTIONS.PROJECTS.id },
       CORRECT_HOOK_MOCK
     );
 

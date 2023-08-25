@@ -7,21 +7,22 @@ import SkillsLayout from "@src/layouts/SkillsLayout";
 import ProjectsLayout from "@src/layouts/ProjectsLayout";
 import FooterLayout from "@src/layouts/FooterLayout";
 
-const { main } = styles;
+const { main, hidden__body } = styles;
 
 const HomeView: React.FC = () => {
-  const { activeId, aboutMeRef, skillsRef, projectsRef } = useHomeView();
+  const { activeId, aboutMeRef, skillsRef, projectsRef, open, setOpen } =
+    useHomeView();
 
   return (
-    <>
-      <HeaderLayout activeId={activeId} />
+    <body className={open ? hidden__body : ""}>
+      <HeaderLayout activeId={activeId} open={open} setOpen={setOpen} />
       <main className={main} data-testid={"main"}>
         <AboutMeLayout aboutMeRef={aboutMeRef} />
         <SkillsLayout skillsRef={skillsRef} />
         <ProjectsLayout projectsRef={projectsRef} />
       </main>
       <FooterLayout />
-    </>
+    </body>
   );
 };
 

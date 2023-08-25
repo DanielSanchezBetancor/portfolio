@@ -24,6 +24,7 @@ $maxGap: 75px;
         transition: transform $transition;
         width: 80%;
         position: absolute;
+        background-color: #6e5494;
         background: colors.$color-gradient-horizontal;
         border-radius: 4px;
         // Skew makes weird things
