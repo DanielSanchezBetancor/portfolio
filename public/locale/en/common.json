@@ -1,5 +1,4 @@
 {
-  "test": "ingles",
   "skills": {
     "illustrationAlt": "Illustration of a responsive design across devices",
     "development": "Development",
@@ -27,7 +26,8 @@
     "iconReactAlt": "Icon React",
     "iconCssAlt": "Icon CSS3",
     "iconSassAlt": "Icon SASS",
-    "iconJestAlt": "Icon Jest"
+    "iconJestAlt": "Icon Jest",
+    "iconCypressAlt": "Icon Cypress"
   },
   "projects": {
     "title": "Projects",

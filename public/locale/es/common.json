@@ -1,5 +1,4 @@
 {
-  "test": "español",
   "skills": {
     "illustrationAlt": "Illustration of a responsive design across devices",
     "development": "Desarrollo",
@@ -27,7 +26,8 @@
     "iconReactAlt": "Icono React",
     "iconCssAlt": "Icono CSS3",
     "iconSassAlt": "Icono SASS",
-    "iconJestAlt": "Icono Jest"
+    "iconJestAlt": "Icono Jest",
+    "iconCypressAlt": "Icono Cypress"
   },
   "projects": {
     "title": "Proyectos",

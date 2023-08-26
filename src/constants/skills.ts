@@ -5,6 +5,7 @@ import IconHTML from "@public/icon-html.svg";
 import IconCSS from "@public/icon-css.svg";
 import IconSASS from "@public/icon-sass.svg";
 import IconJest from "@public/icon-jest.svg";
+import IconCypress from "@public/icon-cypress.svg";
 import { ISkillItem } from "@src/layouts/SkillsLayout/components/SkillsCards/interfaces";
 
 const SKILLS: ISkillItem[] = [
@@ -43,6 +44,11 @@ const SKILLS: ISkillItem[] = [
     icon: IconJest,
     alt: "project.iconJestAlt",
   },
+  {
+    skill: "Cypress",
+    icon: IconCypress,
+    alt: "project.iconCypressAlt"
+  }
 ];
 
 export { SKILLS };
