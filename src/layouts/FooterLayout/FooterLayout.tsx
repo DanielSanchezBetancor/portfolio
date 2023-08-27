@@ -16,29 +16,33 @@ const FooterLayout: React.FC = () => {
   const { visitLinkedinAlt, visitGithubAlt } = useFooterLayout();
 
   return (
-    <footer className={`gradient-horizontal ${footer}`} data-testid={"footer"}>
-      <div data-testid={"footer-name"}>
-        <span className={`header__white ${footer__name}`}>Daniel Sanchez</span>
-        <span className="text__semiwhite">| 2023</span>
-      </div>
-      <div className={socials} data-testid={"footer-socials"}>
-        <Buttons goTo="CV.pdf" download>
-          <ButtonCV />
-        </Buttons>
-        <Buttons color="blue" goTo={NAMESPACES.LINKS.LINKEDIN}>
-          <ButtonIcon
-            alt={visitLinkedinAlt}
-            icon={IconLinkedin}
-            iconWhite={IconLinkedinWhite}
-          />
-        </Buttons>
-        <Buttons color="purple" goTo={NAMESPACES.LINKS.GITHUB}>
-          <ButtonIcon
-            alt={visitGithubAlt}
-            icon={IconGithub}
-            iconWhite={IconGithubWhite}
-          />
-        </Buttons>
+    <footer className={`gradient-horizontal`} data-testid={"footer"}>
+      <div className={`column_1 ${footer}`}>
+        <div data-testid={"footer-name"}>
+          <span className={`header__white ${footer__name}`}>
+            Daniel Sanchez
+          </span>
+          <span className="text__semiwhite">| 2023</span>
+        </div>
+        <div className={socials} data-testid={"footer-socials"}>
+          <Buttons goTo="CV.pdf" download>
+            <ButtonCV />
+          </Buttons>
+          <Buttons color="blue" goTo={NAMESPACES.LINKS.LINKEDIN}>
+            <ButtonIcon
+              alt={visitLinkedinAlt}
+              icon={IconLinkedin}
+              iconWhite={IconLinkedinWhite}
+            />
+          </Buttons>
+          <Buttons color="purple" goTo={NAMESPACES.LINKS.GITHUB}>
+            <ButtonIcon
+              alt={visitGithubAlt}
+              icon={IconGithub}
+              iconWhite={IconGithubWhite}
+            />
+          </Buttons>
+        </div>
       </div>
     </footer>
   );

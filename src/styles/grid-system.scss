@@ -7,6 +7,8 @@ $desktopWidthColumn: 60px;
 // Grid column margin
 $mobileMarginColumn: 16px;
 $desktopMarginColumn: 16px;
+// Medias
+$mediaDesktop: 1024px;
 
 @for $_i from 1 to 13 {
   .column_#{$_i} {
@@ -16,13 +18,16 @@ $desktopMarginColumn: 16px;
   }
   @media (min-width: 1024px) {
     .column_#{$_i} {
-      margin: 0 $desktopMargin +
-        (($desktopWidthColumn + $desktopMarginColumn) * ($_i - 1));
+      // margin: 0 $desktopMargin +
+      //   (($desktopWidthColumn + $desktopMarginColumn) * ($_i - 1));
+      margin: auto;
+          max-width: 1024px;
     }
   }
-  @media (min-width: 1440px) {
-    .column_#{$_i} {
-      margin: 0 10%;
-    }
-  }
+  // @media (min-width: 1440px) {
+  //   .column_#{$_i} {
+  //     margin: auto;
+  //     max-width: 1440px;
+  //   }
+  // }
 }

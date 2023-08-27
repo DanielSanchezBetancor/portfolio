@@ -21,3 +21,15 @@ $color-gray: #7d7d7d;
   background-clip: text;
   -webkit-background-clip: text;
 }
+
+.gradient:after {
+  background: $color-gradient-horizontal;
+}
+
+.blue:after {
+  background: $color-blue;
+}
+
+.purple:after {
+  background: $color-purple;
+}
