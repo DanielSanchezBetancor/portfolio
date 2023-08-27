@@ -2,7 +2,7 @@
   "skills": {
     "illustrationAlt": "Illustration of a responsive design across devices",
     "development": "Development",
-    "developmentDescription": "Front-end Developer specialized in Next.JS and Redux, proficient in HTML5, CSS3 (including SASS), and JavaScript. Experienced in unit testing with Jest and end-to-end testing with Cypress. Proficient in PHP, Symfony, Laravel, and MySQL database management.",
+    "developmentDescription": "Frontend Developer specialized in Next.JS and Redux, proficient in HTML5, CSS3 (including SASS), and JavaScript. Experienced in unit testing with Jest and end-to-end testing with Cypress. Proficient in PHP, Symfony, Laravel, and MySQL database management.",
     "softSkills": "Soft skills",
     "softSkillsDescription": "Effective communicator with strong teamwork skills, seamlessly adapting to new challenges. Problem solver with a critical thinking approach and an ability to find creative solutions. Proactive and resilient, embracing change and fostering collaboration. Enhancing user experiences through understanding, demonstrating empathy.",
     "iconDevAlt": "Code symbol",
@@ -19,7 +19,7 @@
   },
   "project": {
     "codingFlavour": "The flagship platform of our development team, specialized in bringing ideas to life through cutting-edge programmatic solutions. Explore how we create unique and functional digital experiences using technologies like Next.JS, Redux, and more.",
-    "portfolio": "A collection of my projects and achievements in Front-end development. From adaptive and dynamic websites to creative solutions in Next.JS and Redux. Discover my focus on crafting exceptional web experiences.",
+    "portfolio": "A collection of my projects and achievements in Frontend development. From adaptive and dynamic websites to creative solutions in Next.JS and Redux. Discover my focus on crafting exceptional web experiences.",
     "iconJavascriptAlt": "Icon JavaScript",
     "iconNextJsAlt": "Icon NextJS",
     "iconHtmlAlt": "Icon HTML",
@@ -50,14 +50,13 @@
   "aboutMe": {
     "iAm": "Hello! I am",
     "fullstack": "Fullstack Developer",
-    "frontSpecialist": "Front-End Specialist",
-    "aboutMe": "Passionated Front-end Developer with a strong dedication to crafting dynamic and exceptional web solutions. My expertise spans the implementation of JavaScript and its libraries, allowing me to transform ideas into impactful digital realities. With solid leadership and problem-solving skills, my focus lies in continuous improvement, both in individual projects and collaborations with my talented team at Coding Flavour. I'm excited about the opportunities the world of web development holds and eager to continue contributing with innovation and creativity.",
-    "profile": "Profile",
+    "frontSpecialist": "Frontend Specialist",
+    "aboutMe": "Passionate Front-end developer with a strong commitment to creating dynamic and exceptional web solutions. My experience spans JavaScript implementation and its libraries, enabling me to transform ideas into impactful digital realities. With solid leadership and problem-solving skills, my focus lies in continuous improvement, both in individual projects and collaborations with my talented team at Coding Flavour. I'm excited about the opportunities the web development world offers and eager to continue contributing with innovation and creativity.",   "profile": "Profile",
     "experience": "Experience",
     "thatsMe": "That's me!"
   },
   "experience": {
-    "imaweb_1": "Front-end Developer",
+    "imaweb_1": "Frontend Developer",
     "imaweb_2": "Full Stack Developer",
     "imaweb_3": "SQA Developer",
     "inventiaplus_1": "Junior Programmer",
