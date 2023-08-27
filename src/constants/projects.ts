@@ -1,7 +1,7 @@
-import IconHTML from "@public/icon-html.svg";
-import IconJavascript from "@public/icon-javascript.svg";
-import IconNextJS from "@public/icon-nextjs.svg";
-import ImgPlaceholder from "@public/img-placeholder.png";
+import IconHTML from "@public/icon/icon-html.svg";
+import IconJavascript from "@public/icon/icon-javascript.svg";
+import IconNextJS from "@public/icon/icon-nextjs.svg";
+import ImgPlaceholder from "@public/img/img-placeholder.png";
 import { IProject } from "@src/layouts/ProjectsLayout/interfaces";
 
 const PROJECTS: IProject[] = [

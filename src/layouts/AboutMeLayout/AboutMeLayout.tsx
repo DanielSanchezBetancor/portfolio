@@ -1,8 +1,8 @@
 import React from "react";
 import AboutMeInformation from "./components/AboutMeInformation";
 import AboutMeTable from "./components/AboutMeTable";
-import styles from "./styles.module.scss";
 import { IAboutMeLayoutProps } from "./interfaces";
+import styles from "./styles.module.scss";
 
 const { aboutMe } = styles;
 
@@ -11,7 +11,7 @@ const AboutMeLayout: React.FC<IAboutMeLayoutProps> = ({ aboutMeRef }) => {
     <section
       id="about-me"
       ref={aboutMeRef}
-      className={aboutMe}
+      className={`${aboutMe} column_1`}
       data-testid={"about-me"}
     >
       <AboutMeInformation />

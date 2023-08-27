@@ -1,16 +1,15 @@
+$marginMobile: 24px;
+$marginDesktop: 180px;
+
 .aboutMe {
-  display: grid;
-  gap: 24px;
-  padding: 0 0.5rem;
-  overflow: hidden;
-  max-width: 100vw;
-  @media (min-width: 1024px) {
-    grid-template-rows: none;
-    grid-template-columns: 300px 2fr;
-    grid-gap: 1.875rem;
-    padding-top: 5%;
-  }
-  @media (min-width: 1280px) {
-    margin-left: 20%;
+  min-height: 100vh;
+  margin-top: $marginMobile;
+}
+
+@media (min-width: 1024px) {
+  .aboutMe {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin-top: $marginDesktop;
   }
 }

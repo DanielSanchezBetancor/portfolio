@@ -10,7 +10,7 @@ const AboutMeTable: React.FC = () => {
     useAboutMeTable();
 
   return (
-    <div className={table} data-testid={"about-me-table"}>
+    <div className={`${table}`} data-testid={"about-me-table"}>
       <div className={table__header} data-testid={"about-me-table-header"}>
         <span
           className={`${table__header__option}  ${

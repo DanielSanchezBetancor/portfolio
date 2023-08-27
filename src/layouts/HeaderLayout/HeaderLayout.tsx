@@ -1,6 +1,6 @@
-import CodingFlavourLogo from "@public/coding-flavour-logo.svg";
-import IconClose from "@public/icon-close.svg";
-import IconMenu from "@public/icon-menu.svg";
+import CodingFlavourLogo from "@public/img/coding-flavour-logo.svg";
+import IconClose from "@public/icon/icon-close.svg";
+import IconMenu from "@public/icon/icon-menu.svg";
 import { MENU_OPTIONS } from "@src/constants";
 import Image from "next/image";
 import React from "react";

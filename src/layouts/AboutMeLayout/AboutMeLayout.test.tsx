@@ -1,8 +1,10 @@
 import { render } from "@src/test/test-utils";
 import AboutMeLayout from "./AboutMeLayout";
+import React from "react";
 
 const setup = () => {
-  const context = render(<AboutMeLayout />);
+  const refSpy = React.createRef<HTMLElement>();
+  const context = render(<AboutMeLayout aboutMeRef={refSpy} />);
 
   return {
     context,

@@ -1,5 +1,5 @@
-import IllustrationMobile from "@public/illustration-mobile.png";
-import Illustration from "@public/illustration.png";
+import IllustrationMobile from "@public/img/illustration-mobile.png";
+import Illustration from "@public/img/illustration.png";
 import Image from "next/image";
 import React from "react";
 import useIllustrationImage from "./hooks/useIllustrationImage";

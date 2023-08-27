@@ -20,19 +20,19 @@ const useHomeView = () => {
     if (skills.top <= ANIMATION_TOP)
       skillsRef.current?.setAttribute(
         "class",
-        `${skillsRef.current?.classList[0]} ${animate}`
+        `${skillsRef.current?.classList[0]} column_1 ${animate}`
       );
     if (skills.top <= TOP) setActiveId(MENU_OPTIONS.SKILLS.id);
     if (projects.top <= ANIMATION_TOP)
       projectsRef.current?.setAttribute(
         "class",
-        `${projectsRef.current?.classList[0]} ${animate}`
+        `${projectsRef.current?.classList[0]} column_1 ${animate}`
       );
     if (projects.top <= TOP) setActiveId(MENU_OPTIONS.PROJECTS.id);
     if (skills.top > ANIMATION_TOP && projects.top > ANIMATION_TOP)
       aboutMeRef.current?.setAttribute(
         "class",
-        `${aboutMeRef.current?.classList[0]} ${animate}`
+        `${aboutMeRef.current?.classList[0]} column_1 ${animate}`
       );
     if (skills.top > TOP && projects.top > TOP)
       setActiveId(MENU_OPTIONS.ABOUT_ME.id);

@@ -1,5 +1,5 @@
-import IconGithub from "@public/icon-github.svg";
-import IconGoTo from "@public/icon-goto.svg";
+import IconGithub from "@public/icon/icon-github.svg";
+import IconGoTo from "@public/icon/icon-goto.svg";
 import Image from "next/image";
 import React from "react";
 import { IProjectCardDetailsProps } from "./interfaces";
