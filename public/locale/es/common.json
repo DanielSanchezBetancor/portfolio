@@ -27,7 +27,8 @@
     "iconCssAlt": "Icono CSS3",
     "iconSassAlt": "Icono SASS",
     "iconJestAlt": "Icono Jest",
-    "iconCypressAlt": "Icono Cypress"
+    "iconCypressAlt": "Icono Cypress",
+    "iconReduxAlt": "Icono Redux"
   },
   "projects": {
     "title": "Proyectos",
