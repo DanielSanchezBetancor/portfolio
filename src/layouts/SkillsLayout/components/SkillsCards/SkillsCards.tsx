@@ -19,7 +19,7 @@ const SkillsCards: React.FC = () => {
   } = useSkillsCards();
 
   return (
-    <div className={skills__background__cards} data-testid={"skills-cards"}>
+    <div className={`${skills__background__cards} column_1`} data-testid={"skills-cards"}>
       <SkillsCard
         icon={IconDev}
         iconAlt={iconDevAlt}

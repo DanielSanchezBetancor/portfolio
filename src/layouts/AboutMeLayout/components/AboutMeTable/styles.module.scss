@@ -2,6 +2,7 @@
 
 $transition: 200ms ease-out;
 $imageWidth: 250px;
+$optionWidth: 200px;
 $gap: 1rem;
 $maxGap: 75px;
 
@@ -15,7 +16,7 @@ $maxGap: 75px;
     margin-bottom: 24px;
     &__option {
       display: inline-block;
-      width: 200px;
+      width: $optionWidth;
       padding: 1.1rem 0;
       text-align: center;
       position: relative;

@@ -1,12 +1,14 @@
+@use "@src/styles/grid-system.scss" as gridSystem;
+
 .mobile {
-  @media (min-width: 980px) {
+  @media (min-width: gridSystem.$mediaDesktop) {
     display: none;
   }
 }
 
 .desktop {
   display: none;
-  @media (min-width: 980px) {
+  @media (min-width: gridSystem.$mediaDesktop) {
     display: revert;
   }
 }
