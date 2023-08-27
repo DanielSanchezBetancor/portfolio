@@ -1,12 +1,12 @@
-import IconJavascript from "@public/icon-javascript.svg";
-import IconReact from "@public/icon-react.svg";
-import IconNextJS from "@public/icon-nextjs.svg";
-import IconHTML from "@public/icon-html.svg";
-import IconCSS from "@public/icon-css.svg";
-import IconSASS from "@public/icon-sass.svg";
-import IconJest from "@public/icon-jest.svg";
-import IconCypress from "@public/icon-cypress.svg";
-import IconRedux from "@public/icon-redux.svg";
+import IconJavascript from "@public/icon/icon-javascript.svg";
+import IconReact from "@public/icon/icon-react.svg";
+import IconNextJS from "@public/icon/icon-nextjs.svg";
+import IconHTML from "@public/icon/icon-html.svg";
+import IconCSS from "@public/icon/icon-css.svg";
+import IconSASS from "@public/icon/icon-sass.svg";
+import IconJest from "@public/icon/icon-jest.svg";
+import IconCypress from "@public/icon/icon-cypress.svg";
+import IconRedux from "@public/icon/icon-redux.svg";
 import { ISkillItem } from "@src/layouts/SkillsLayout/components/SkillsCards/interfaces";
 
 const SKILLS: ISkillItem[] = [

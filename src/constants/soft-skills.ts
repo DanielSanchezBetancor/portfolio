@@ -1,4 +1,4 @@
-import IconSoftSkillsVerified from "@public/icon-soft-skill-verified.svg";
+import IconSoftSkillsVerified from "@public/icon/icon-soft-skill-verified.svg";
 import { ISkillItem } from "@src/layouts/SkillsLayout/components/SkillsCards/interfaces";
 
 const SOFT_SKILLS: ISkillItem[] = [

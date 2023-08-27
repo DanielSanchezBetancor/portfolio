@@ -1,10 +1,6 @@
-@use "@src/styles/colors";
-
 .wrapper {
-  background-color: colors.$color-white-background;
   display: flex;
   flex-direction: column;
-  max-width: 100vw;
   span:last-child {
     width: fit-content;
     color: transparent;
@@ -13,7 +9,7 @@
 
 @media (min-width: 1024px) {
   .wrapper {
-    margin: 200px 0;
+    margin: 100px 0;
     white-space: nowrap;
   }
 }

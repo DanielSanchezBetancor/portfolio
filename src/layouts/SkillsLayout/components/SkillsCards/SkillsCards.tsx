@@ -1,5 +1,5 @@
-import IconDev from "@public/icon-dev.svg";
-import IconSoftSkills from "@public/icon-soft-skills.svg";
+import IconDev from "@public/icon/icon-dev.svg";
+import IconSoftSkills from "@public/icon/icon-soft-skills.svg";
 import { SKILLS, SOFT_SKILLS } from "@src/constants";
 import React from "react";
 import SkillsCard from "./components/SkillsCard";

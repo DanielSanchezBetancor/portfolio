@@ -12,6 +12,7 @@
 .panelLeft {
   display: flex;
   gap: parentStyle.$gap;
+  max-width: 720px;
   &__information {
     display: flex;
     flex-direction: column;
@@ -25,20 +26,20 @@
 }
 
 .panelRight {
+  max-width: 720px;
   display: flex;
   flex-direction: column;
 }
 
 .panelsWrapper {
   display: grid;
-  grid-template-columns: 95vw 95vw;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 200%;
   justify-content: center;
   justify-items: center;
-  // width: 150%;
   transition: translate 200ms ease-out;
   > div {
-    transition: opacity 200ms ease-out;
+    transition: opacity 400ms ease-out;
   }
   > :first-child {
     opacity: 1;
@@ -50,6 +51,7 @@
     translate: -50%;
     > :first-child {
       opacity: 0;
+      transition: opacity 50ms ease-out;
     }
     > :last-child {
       opacity: 1;
@@ -57,15 +59,10 @@
   }
 }
 
-@media (min-width: 420px) {
-  .panelsWrapper {
-    grid-template-columns: 1fr 1fr;
-    width: 200%;
-  }
-}
 @media (min-width: 1024px) {
   .panelImage {
     display: revert;
+    transform: translate(0, -40px);
   }
   .panelLeft {
     gap: parentStyle.$gap;
@@ -73,14 +70,11 @@
       justify-content: unset;
     }
     &__information {
-      margin-top: 4rem;
+      margin-top: 140px;
     }
   }
   .panelRight {
     padding-left: 200px;
-  }
-  .panelsWrapper {
-    width: 150%;
   }
 }
 

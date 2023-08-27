@@ -1,8 +1,8 @@
-import IconGithubWhite from "@public/icon-github-white.svg";
-import IconGithub from "@public/icon-github.svg";
-import IconLinkedinWhite from "@public/icon-linkedin-white.svg";
-import IconLinkedin from "@public/icon-linkedin.svg";
-import Me from "@public/me.png";
+import IconGithubWhite from "@public/icon/icon-github-white.svg";
+import IconGithub from "@public/icon/icon-github.svg";
+import IconLinkedinWhite from "@public/icon/icon-linkedin-white.svg";
+import IconLinkedin from "@public/icon/icon-linkedin.svg";
+import Me from "@public/img/me.png";
 import Buttons from "@src/common/Buttons";
 import ButtonCV from "@src/common/Buttons/components/ButtonCV";
 import ButtonIcon from "@src/common/Buttons/components/ButtonIcon";
@@ -40,6 +40,7 @@ const AboutMeTableBody: React.FC<IAboutMeTableBodyProps> = ({ active }) => {
           alt={thatsMeAlt}
           className={`gradient-horizontal ${panelImage}`}
           data-testid={"about-me-table-body-left-image"}
+          unoptimized={true}
         />
         <div
           className={panelLeft__information}

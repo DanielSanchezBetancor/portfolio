@@ -19,11 +19,11 @@ const AboutMeInformation: React.FC = () => {
       <span className="header__big" data-testid={"information-text-3"}>
         Sánchez
       </span>
-      <span className="header__small" data-testid={"information-text-4"}>
+      <span className="header__medium" data-testid={"information-text-4"}>
         {fullstackLabel}
       </span>
       <span
-        className="header__small text-gradient"
+        className="header__medium text-gradient"
         data-testid={"information-text-5"}
       >
         {frontSpecialistLabel}

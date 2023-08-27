@@ -3,7 +3,6 @@
 .main {
   section {
     background-color: colors.$color-white-background;
-    scroll-margin-top: 125px;
     opacity: 0;
     transform: translateY(10%);
     &.animate {
