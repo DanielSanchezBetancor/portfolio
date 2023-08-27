@@ -3,7 +3,7 @@
 .wrapper button {
   background-color: colors.$color-white-secondary;
   padding: 10px 14px;
-  border-radius: 4px;
+  border-radius: 5px;
   position: relative;
   border: 0;
   cursor: pointer;
@@ -21,7 +21,6 @@
   &:after {
     content: "";
     height: 4px;
-    background: colors.$color-gradient-horizontal;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -29,12 +28,6 @@
     transition: height 300ms ease-out;
     z-index: 2;
     border-radius: 4px;
-  }
-  &.blue:after {
-    background: colors.$color-blue;
-  }
-  &.purple:after {
-    background: colors.$color-purple;
   }
 }
 

@@ -11,10 +11,11 @@ const Buttons: React.FC<IButtonsProps> = ({
   color,
   download,
 }) => {
+  const finalClassName = color ?? "gradient";
   return (
     <div className={wrapper} data-testid={"wrapper"}>
       <Link href={goTo} download={download ?? false} target={"_blank"}>
-        <button className={color} data-testid={"wrapper-button"}>
+        <button className={finalClassName} data-testid={"wrapper-button"}>
           {children}
         </button>
       </Link>
