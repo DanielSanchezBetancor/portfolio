@@ -1,14 +1,24 @@
+@use "@src/styles/grid-system" as gridSystem;
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
   padding: 1rem;
+  max-width: 720px;
   &__header,
   &__body {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+}
+
+@media (min-width: gridSystem.$mediaDesktop) {
+  .card {
+    gap: 1.5rem;
+    max-width: unset;
   }
 }

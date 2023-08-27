@@ -11,7 +11,7 @@ const Tag: React.FC<ISkillItem> = ({ icon, skill, alt }) => {
 
   return (
     <div className={tag} data-testid="tag">
-      <Image src={icon} alt={translatedAlt} data-testid="tag-icon" />
+      <Image src={icon} alt={translatedAlt} data-testid="tag-icon" width={24} height={24}/>
       <span className="text__semibold" data-testid="tag-skill">
         {translatedSkill}
       </span>

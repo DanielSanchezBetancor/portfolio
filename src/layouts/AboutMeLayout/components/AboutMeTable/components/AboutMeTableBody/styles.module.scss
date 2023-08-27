@@ -2,33 +2,18 @@
 
 .panelImage {
   display: none;
-  border-radius: 100vh;
-  width: parentStyle.$imageWidth;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  align-self: flex-start;
 }
 
-.panelLeft {
-  display: flex;
-  gap: parentStyle.$gap;
-  max-width: 720px;
-  &__information {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  &__actions {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-}
-
+.panelLeft,
 .panelRight {
   max-width: 720px;
+}
+
+.panelLeft__actions {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .panelsWrapper {
@@ -63,8 +48,18 @@
   .panelImage {
     display: revert;
     transform: translate(0, -40px);
+    border-radius: 100vh;
+    width: parentStyle.$imageWidth;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    align-self: flex-start;
+  }
+  .panelLeft,
+  .panelRight {
+    max-width: unset;
   }
   .panelLeft {
+    display: flex;
     gap: parentStyle.$gap;
     &__actions {
       justify-content: unset;
