@@ -7,6 +7,7 @@ import IconSASS from "@public/icon/icon-sass.svg";
 import IconJest from "@public/icon/icon-jest.svg";
 import IconCypress from "@public/icon/icon-cypress.svg";
 import IconRedux from "@public/icon/icon-redux.svg";
+import IconNodeJS from "@public/icon/icon-nodejs.svg";
 import { ISkillItem } from "@src/layouts/SkillsLayout/components/SkillsCards/interfaces";
 
 const SKILLS: ISkillItem[] = [
@@ -54,6 +55,16 @@ const SKILLS: ISkillItem[] = [
     skill: "Redux",
     icon: IconRedux,
     alt: "project.iconReduxAlt",
+  },
+  {
+    skill: "Redux ToolKit",
+    icon: IconRedux,
+    alt: "project.iconRTKAlt",
+  },
+  {
+    skill: "NodeJS",
+    icon: IconNodeJS,
+    alt: "project.iconNodeJSAlt",
   },
 ];
 

@@ -50,7 +50,7 @@ const ProjectCardRight: React.FC<IProject> = ({
         />
         <div className={slider} data-testid={"project-card-right-slider"}>
           {techStack.map((tech) => (
-            <Image src={tech.icon} alt={t(tech.iconAlt)} key={tech.iconAlt} />
+            <Image src={tech.icon} alt={t(tech.iconAlt)} key={tech.iconAlt} width={24} height={24}/>
           ))}
         </div>
       </div>

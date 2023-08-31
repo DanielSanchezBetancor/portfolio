@@ -21,7 +21,7 @@ const ProjectsLayout: React.FC<IProjectsLayoutProps> = ({ projectsRef }) => {
       <h2 className={"header__extra-small"} data-testid="projects-title">
         {projectsLabel}
       </h2>
-      <div className={grid} data-testid="projects-grid">
+      <div className={`${grid} column_1`} data-testid="projects-grid">
         {PROJECTS.map((project, index) =>
           index % 2 === 0 ? (
             <ProjectCardRight {...project} key={project.title} index={index} />

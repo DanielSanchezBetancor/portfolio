@@ -18,8 +18,8 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 0;
     transform: translateY(-150px);
-    $gap: 75px;
-    padding: 52px 75px 33px; //Design system
+    $gap: 65px;
+    padding: 52px  calc($gap + 10px) 33px; //Design system
     > :first-child {
       padding-right: $gap;
       border-right: 1px solid colors.$color-gray;
