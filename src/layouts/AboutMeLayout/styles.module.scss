@@ -4,6 +4,8 @@ $marginDesktop: 180px;
 .aboutMe {
   min-height: 100vh;
   margin-top: $marginMobile;
+  scroll-margin-top: 550px; //Focus on the skills
+
 }
 
 @media (min-width: 1024px) {

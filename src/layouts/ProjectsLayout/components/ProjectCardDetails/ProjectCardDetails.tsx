@@ -38,7 +38,7 @@ const ProjectCardDetails: React.FC<IProjectCardDetailsProps> = ({
           </div>
         </div>
         <span
-          className="text__bold__small"
+          className="text__small"
           data-testid={"project-card-details-description"}
         >
           {description}

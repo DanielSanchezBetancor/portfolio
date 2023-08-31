@@ -4,7 +4,6 @@
   section {
     background-color: colors.$color-white-background;
     opacity: 0;
-    transform: translateY(10%);
     &.animate {
       animation: slideIn 300ms forwards ease-out;
       > div > div {

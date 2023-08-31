@@ -3,15 +3,19 @@ import { ISkillItem } from "@src/layouts/SkillsLayout/components/SkillsCards/int
 
 const SOFT_SKILLS: ISkillItem[] = [
   {
+    skill: "softSkills.proactivity",
+    icon: IconSoftSkillsVerified,
+  },
+  {
+    skill: "softSkills.iniciative",
+    icon: IconSoftSkillsVerified,
+  },
+  {
     skill: "softSkills.teamwork",
     icon: IconSoftSkillsVerified,
   },
   {
     skill: "softSkills.quickLearner",
-    icon: IconSoftSkillsVerified,
-  },
-  {
-    skill: "softSkills.proactivity",
     icon: IconSoftSkillsVerified,
   },
   {
@@ -24,10 +28,6 @@ const SOFT_SKILLS: ISkillItem[] = [
   },
   {
     skill: "softSkills.criticalThinking",
-    icon: IconSoftSkillsVerified,
-  },
-  {
-    skill: "softSkills.iniciative",
     icon: IconSoftSkillsVerified,
   },
 ];

@@ -18,8 +18,8 @@
     "iniciative": "Iniciative"
   },
   "project": {
-    "codingFlavour": "The flagship platform of our development team, specialized in bringing ideas to life through cutting-edge programmatic solutions. Explore how we create unique and functional digital experiences using technologies like Next.JS, Redux, and more.",
-    "portfolio": "A collection of my projects and achievements in Frontend development. From adaptive and dynamic websites to creative solutions in Next.JS and Redux. Discover my focus on crafting exceptional web experiences.",
+    "codingFlavour": "The flagship platform of our development team, specialized in bringing ideas to life through cutting-edge programmatic solutions. Explore how we create unique and functional digital experiences.",
+    "portfolio": "A collection of my projects and achievements. From adaptive and dynamic websites to creative solutions in Next.JS and Redux. Discover my focus on crafting exceptional web experiences.",
     "iconJavascriptAlt": "Icon JavaScript",
     "iconNextJsAlt": "Icon NextJS",
     "iconHtmlAlt": "Icon HTML",
@@ -28,7 +28,8 @@
     "iconSassAlt": "Icon SASS",
     "iconJestAlt": "Icon Jest",
     "iconCypressAlt": "Icon Cypress",
-    "iconReduxAlt": "Icon Redux"
+    "iconReduxAlt": "Icon Redux",
+    "iconRTKAlt": "Icon Redux Toolkit"
   },
   "projects": {
     "title": "Projects",

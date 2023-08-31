@@ -10,7 +10,7 @@
   },
   "softSkills": {
     "teamwork": "Trabajo en equipo",
-    "quickLearner": "Rápido en aprender",
+    "quickLearner": "Facilidad de aprendizaje",
     "proactivity": "Proactividad",
     "effectiveCommunication": "Comunicación efectiva",
     "adaptability": "Adaptabilidad",
@@ -18,8 +18,8 @@
     "iniciative": "Iniciativa"
   },
   "project": {
-    "codingFlavour": "La plataforma principal de nuestro equipo de desarrollo, especializado en dar vida a ideas con soluciones programáticas de vanguardia. Explora cómo creamos experiencias digitales únicas y funcionales a través de tecnologías como Next.JS, Redux y más.",
-    "portfolio": "Una recopilación de mis proyectos y logros en el desarrollo Frontend. Desde páginas web adaptables y dinámicas hasta soluciones creativas en Next.JS y Redux. Descubre mi enfoque en la creación de experiencias web excepcionales.",
+    "codingFlavour": "La plataforma principal de nuestro equipo de desarrollo, especializado en dar vida a ideas con soluciones programáticas de vanguardia. Explora cómo creamos experiencias digitales únicas y funcionales.",
+    "portfolio": "Una recopilación de mis proyectos y logros. Desde páginas web adaptables y dinámicas hasta soluciones creativas en Next.JS y Redux. Descubre mi enfoque en la creación de experiencias web excepcionales.",
     "iconJavascriptAlt": "Icono JavaScript",
     "iconNextJsAlt": "Icono NextJS",
     "iconHtmlAlt": "Icono HTML5",
@@ -28,7 +28,8 @@
     "iconSassAlt": "Icono SASS",
     "iconJestAlt": "Icono Jest",
     "iconCypressAlt": "Icono Cypress",
-    "iconReduxAlt": "Icono Redux"
+    "iconReduxAlt": "Icono Redux",
+    "iconRTKAlt": "Icono Redux Toolkit"
   },
   "projects": {
     "title": "Proyectos",
