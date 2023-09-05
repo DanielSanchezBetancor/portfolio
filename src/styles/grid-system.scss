@@ -16,7 +16,7 @@ $mediaDesktop: 1024px;
       $mobileMargin +
       (($mobileWidthColumn + $mobileMarginColumn) * ($_i - 1));
   }
-  @media (min-width: 1024px) {
+  @media (min-width: $mediaDesktop) {
     .column_#{$_i} {
       // margin: 0 $desktopMargin +
       //   (($desktopWidthColumn + $desktopMarginColumn) * ($_i - 1));

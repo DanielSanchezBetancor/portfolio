@@ -6,7 +6,7 @@
 
 .panelLeft,
 .panelRight {
-  max-width: 720px;
+  max-width: parentStyle.$panelMaxWidth;
 }
 
 .panelLeft__actions {

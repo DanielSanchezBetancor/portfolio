@@ -5,15 +5,15 @@ $imageWidth: 250px;
 $optionWidth: 200px;
 $gap: 1rem;
 $maxGap: 75px;
+$panelMaxWidth: 720px;
 
 .table {
   margin-top: 24px;
   overflow: hidden;
   &__header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
+    max-width: $panelMaxWidth;
+    margin: 0 auto 24px;
     &__option {
       display: inline-block;
       width: $optionWidth;
@@ -84,7 +84,8 @@ $maxGap: 75px;
     margin-top: 0;
     &__header {
       margin: 0;
-      margin-left: $imageWidth;
+      margin-left: calc($imageWidth + $gap);
+      max-width: unset;
     }
   }
 }
