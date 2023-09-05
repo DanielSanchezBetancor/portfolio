@@ -11,15 +11,7 @@ const IllustrationImage: React.FC = () => {
   const { illustrationLabel } = useIllustrationImage();
 
   return (
-    <>
-      <Image src={Illustration} alt={illustrationLabel} className={desktop} />
-      <Image
-        src={IllustrationMobile}
-        alt={illustrationLabel}
-        className={mobile}
-        height={110}
-      />
-    </>
+    <Image src={Illustration} alt={illustrationLabel} className={desktop} />
   );
 };
 

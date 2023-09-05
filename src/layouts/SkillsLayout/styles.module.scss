@@ -4,16 +4,19 @@
   scroll-margin-top: -550px; //Focus on the skills
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   padding-bottom: 3.5rem;
-  position: relative;
   &__beautifier {
     display: block;
     width: 100%;
-    height: 80%;
+    height: 95%;
     position: absolute;
-    top: 109px; // Image height - 1px from the image that could be cropped too
+    top:0;
+    z-index: -1;
+  }
+  &__cards {
+    position: relative;
+
   }
 }
 

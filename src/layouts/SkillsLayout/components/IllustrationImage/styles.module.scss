@@ -1,14 +1,7 @@
-@use "@src/styles/grid-system.scss" as gridSystem;
-
-.mobile {
-  @media (min-width: gridSystem.$mediaDesktop) {
-    display: none;
-  }
-}
-
 .desktop {
-  display: none;
-  @media (min-width: gridSystem.$mediaDesktop) {
-    display: revert;
-  }
+  width: 100%;
+  max-width: 980px;
+  height: 100%;
+  top: 0;
+  margin: 0 auto;
 }
